@@ -3,10 +3,10 @@
 
 
 ### Project overview
-Object detection is the most important part of building self-driving cars. This project is designed to leverage the great [TensorFlow Object Detection API](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md) for object detection specifically in urban environments.
-[TensorFlow Object Detection API](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md) procide us huge [zoo of models](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) with easy to use approach.
+Object detection is the most important part of building self-driving cars. This project is designed to leverage the great [TensorFlow Object Detection API](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md) for object detection specifically in urban environments. <br/>
+[TensorFlow Object Detection API](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md) procide us huge [zoo of models](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) with easy to use approach.<br/>
 
-Our goal with this project is to finetune the pretrained model to detect cars , pedestrians and cyclists in traffic. 
+Our goal with this project is to finetune the pretrained model to detect cars , pedestrians and cyclists in traffic. <br/>
 
 ### Set up:
 The project is structured as follows:
@@ -37,20 +37,20 @@ Workspace
 │   utils.py
 ```
 
-The steps to run the code is given in README.md file
+The steps to run the code is given in README.md file<br/>
 
 ### Dataset
-Dataset we work is Waymo Open dataset which provides high quality video frames in urban environment. The frames contains object in 3 different classes. Cars, Pedestrians, Cyclists.
-![Example images]( https://github.com/UlviShukurzade/Object-Detection-in-an-Urban-Environment/blob/main/images/eda/download.png?raw=true )
-![Example images]( https://github.com/UlviShukurzade/Object-Detection-in-an-Urban-Environment/blob/main/images/eda/download_1.png?raw=true )
-![Example images]( https://github.com/UlviShukurzade/Object-Detection-in-an-Urban-Environment/blob/main/images/eda/download_2.png?raw=true )
-![Example images]( https://github.com/UlviShukurzade/Object-Detection-in-an-Urban-Environment/blob/main/images/eda/download_3.png?raw=true )
+Dataset we work is Waymo Open dataset which provides high quality video frames in urban environment. The frames contains object in 3 different classes. Cars, Pedestrians, Cyclists.<br/>
+![Example images]( https://github.com/UlviShukurzade/Object-Detection-in-an-Urban-Environment/blob/main/images/eda/download.png?raw=true )<br/>
+![Example images]( https://github.com/UlviShukurzade/Object-Detection-in-an-Urban-Environment/blob/main/images/eda/download_1.png?raw=true )<br/>
+![Example images]( https://github.com/UlviShukurzade/Object-Detection-in-an-Urban-Environment/blob/main/images/eda/download_2.png?raw=true )<br/>
+![Example images]( https://github.com/UlviShukurzade/Object-Detection-in-an-Urban-Environment/blob/main/images/eda/download_3.png?raw=true )<br/>
 
-in the following image, there is blo annotation box in the upper part of image, which can be considered as weakness of the dataset.
-![Example images]( https://github.com/UlviShukurzade/Object-Detection-in-an-Urban-Environment/blob/main/images/eda/annotation_error.png?raw=true )
+in the following image, there is blo annotation box in the upper part of image, which can be considered as weakness of the dataset.<br/>
+![Example images]( https://github.com/UlviShukurzade/Object-Detection-in-an-Urban-Environment/blob/main/images/eda/annotation_error.png?raw=true )<br/>
 
-From the simple analisys it is seen that there is significant difference between the amount of car objects vs other 2 classes, which might cause our model be less precise on pedestrian and bicycle detection.
-![Example images]( https://github.com/UlviShukurzade/Object-Detection-in-an-Urban-Environment/blob/main/images/eda/class_distribution.png?raw=true )
+From the simple analisys it is seen that there is significant difference between the amount of car objects vs other 2 classes, which might cause our model be less precise on pedestrian and bicycle detection.<br/>
+![Example images]( https://github.com/UlviShukurzade/Object-Detection-in-an-Urban-Environment/blob/main/images/eda/class_distribution.png?raw=true )<br/>
 
 Dataset is split into Train Eval and Test sets in workspace.
 ### Reference experiment
